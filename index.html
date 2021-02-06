@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <label class="label">
+        <div class="toggle">
+          <input class="toggle-state" type="checkbox" id="myCheck" onclick="myFunction()" name="check" value="check" />
+          <div class="indicator"></div>
+        </div>
+      </label>
+    <div class="container">
+        <h1 id="header_title" >Convert To Any Number System</h1>
+        <form id="form">
+            <div class="cover">
+                <p class="alert">Sorry Zisan Not Allow 6+ Value!</p>
+                <input type="text" id="data_input" class="btn" placeholder="Enter Number" >
+            </div>
+           <br>
+            <select id="section_one" class="btn">
+                <option value="2">Binary</option>
+                <option value="10">Decimal</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <small>to</small>
+            <select id="section_two" class="btn">
+                <option value="2">Binary</option>
+                <option value="10">Decimal</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select><br>
+            <button type="submit" class="btn">CONVERT</button>
+        </form>
+        <h2 id="result"><span id="show_result">RESULT</span><button id="copy_button">Copy</button></h2>
+    </div>
+    <div class=" mb-5">
+        <div class="historey">
+            <h1>historey</h1><hr>
+            <table class="table  table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2">Input</th>
+                        <th colspan="2">Output</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot>
+                    <td colspan="4"><button class=" btn_footer" onclick="clearData()">Clear All Historey</button></td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

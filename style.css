@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    user-select: none;
+}
+.container{
+    max-width: 700px;
+    margin: auto;
+}
+.mb-5{
+    margin-bottom: 100px;
+}
+#header_title{
+    color: #32BECE;
+    margin: 20px 0px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size:1rem;
+    margin: 30px 0px;
+}
+.cover{
+   position: relative;
+}
+.alert{
+    background-color: rgb(250, 115, 115);
+    padding: 10px 30px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+    transition: .3s;
+    z-index: -1;
+}
+input.btn{
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    caret-color: #32BECE;
+    color: #32BECE;
+    z-index: 2;
+}
+input.btn:focus {
+    outline-color: #32BECE;
+    box-shadow: 0 0 3px 0 #32BECE;
+  }
+::-webkit-input-placeholder{
+    letter-spacing: normal;
+}
+select.btn{
+    width: 47%;
+    margin:10px 0px;
+}
+button.btn{
+    background-color: #32BECE;
+    border: none;
+    box-shadow: 0 0 5px 0 gray;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+button.btn:hover{
+    background-color: #8deaf7;
+    box-shadow: 0 0 10px 0 rgb(53, 53, 53);
+}
+small{
+    font-size: 1.3rem;
+}
+h2#result{
+    margin: 40px 0px;
+    color: #32BECE;
+    font-size: 3rem;
+}
+
+#copy_button{
+    cursor: pointer;
+}
+.btn_footer{
+    margin: 0;
+    background-color: rgba(255, 0, 0, 0.582);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 5px 0 black;
+    font-size: 1rem;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+.btn_footer:hover{
+    background-color: #8deaf7;
+    box-shadow: 0 0 10px 0 rgb(53, 53, 53);
+}
+
+/*Historey Work Here*/
+.historey{
+    border: 1px solid;
+    max-width: 700px;
+    margin: auto;
+}
+.historey h1{
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+ .thead-dark th {
+    color: #fff;
+    background-color: #32BECE;
+    border-color: #32BECE;
+    text-transform: uppercase;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+  }
+  .table tbody tr:hover {
+    background-color: rgba(50, 190, 206, 0.13);
+    cursor: pointer;
+ }
+/*Dark ON/Off Button*/
+  .label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+    position: fixed;
+    right: 20px;
+  }
+  .toggle {
+    isolation: isolate;
+    position: relative;
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:
+      -8px -4px 8px 0px #ffffff,
+      8px 4px 12px 0px #d1d9e6,
+      4px 4px 4px 0px #d1d9e6 inset,
+      -4px -4px 4px 0px #ffffff inset;
+  }
+  
+  .toggle-state {
+    display: none;
+  }
+  
+  .indicator {
+    height: 100%;
+    width: 200%;
+    background: #32BECE;
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+    box-shadow:
+      -8px -4px 8px 0px #ffffff,
+      8px 4px 12px 0px #d1d9e6;
+  }
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+  .shake {
+    animation-name: shake;
+    animation-duration: 0.15s;
+    animation-iteration-count: 5;
+  }
+
+/*Responsive */
+@media only screen and (max-width: 549px) {
+ .alert{
+  padding: 10px 0px;
+  width: 80%;
+ }
+small{
+  display: block;
+}
+#header_title{
+  font-size: 2rem;
+}
+select.btn {
+  width: 86%;
+}
+.btn {
+  width: 89%;
+}
+
+}
